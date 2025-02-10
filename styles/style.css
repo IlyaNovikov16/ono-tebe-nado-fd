@@ -37,8 +37,7 @@ body {
 .header__links-list a:hover {
   text-decoration: none;
 }
-.header__links-list-item {
-}
+
 .header_link_custom {
   list-style: none;
   text-decoration: none;
