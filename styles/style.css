@@ -82,7 +82,6 @@ body {
   text-transform: uppercase;
 }
 .cover_word_tebe {
-  display: block;
   color: white;
   display: flex;
   justify-content: center;
@@ -96,7 +95,6 @@ body {
   display: block;
   margin-right: -80px;
   justify-content: flex-end;
-  letter-spacing: normal;
   margin-top: 20px;
   color: #ffffff;
   font-size: 100px;
@@ -194,7 +192,6 @@ body {
 }
 
 .card__title-men {
-  z-index: 2;
   color: white;
   font-size: 22px;
   width: 254px;
