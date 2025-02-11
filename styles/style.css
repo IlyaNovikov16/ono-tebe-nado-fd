@@ -11,14 +11,14 @@ body {
   padding-bottom: 96px;
   position: relative;
   background-color: white;
+  padding-top: 92px;
 }
 
 .logo-header {
   display: block;
   width: 148px;
   height: 105px;
-  margin-top: 92px;
-  left: 478px;
+  left: 487px;
 }
 .header__logo-image {
   width: 129.11px;
