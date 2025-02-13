@@ -13,21 +13,21 @@
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
-          <li class="header__links-list-item header_link_custom">
-            <a href="#">главная</a>
+          <li class="header__links-list-item header_point_custom">
+            <a class="header__link header__link_active" href="#">главная</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#">посмотреть лоты</a>
+            <a class="header__link" href="#">посмотреть лоты</a>
           </li>
           <li class="header__links-list-item">
-            <a href="#"> об аукционе </a>
+            <a class="header__link" href="#"> об аукционе </a>
           </li>
         </ul>
       </nav>
       <a class="logo-header">
         <img
           class="header__logo-image"
-          src="images\logo-black.svg"
+          src="images/logo-black.svg"
           alt="Логотип 'Оно тебе надо' черный"
         />
       </a>
@@ -45,9 +45,9 @@
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover_word">
-          <span class="cover_word_ono">Оно</span>
-          <span class="cover_word_tebe">Тебе</span>
-          <span class="cover_word_nado">надо</span>
+          <span class="cover_word_text-align-left">Оно</span>
+          <span class="cover_word_text-align-center">Тебе</span>
+          <span class="cover_word_text-align-right">надо</span>
         </h1>
         <div class="description">
           <p class="cover__description-text">
@@ -62,9 +62,9 @@
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card-men">
+              <article class="card card-image-men">
                 <div class="overlay"></div>
-                <h3 class="card__title-men">
+                <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
                 <p class="card__text-men">
@@ -77,9 +77,9 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card-door">
+              <article class="card card-image-door">
                 <div class="overlay"></div>
-                <h3 class="card__title-door">
+                <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
                 <p class="card__text-door">
@@ -95,9 +95,9 @@
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card-picture">
+              <article class="card card-image-picture">
                 <div class="overlay"></div>
-                <h3 class="card__title-picture">
+                <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
                 <p class="card__text-picture">
@@ -125,13 +125,12 @@
           <div class="about__all_par">
             <p class="about__par">
               Здесь вы не встретите очередное пафосное собрание невероятно
-              дорогого антиквариата. aboutНаши лоты вообще не должны были
-              попасть ни на один аукцион. Потомуabout что кому нужен дневник
-              девочки-подростка или картина, которую моaboutжет нарисовать даже
-              ребёнок? Кому нужны все эти странные вещи, создaboutанные
-              любителями?
+              дорогого антиквариата. Наши лоты вообще не должны были попасть ни
+              на один аукцион. Потому что кому нужен дневник девочки-подростка
+              или картина, которую может нарисовать даже ребёнок? Кому нужны все
+              эти странные вещи, созданные любителями?
             </p>
-            <p class="about__par par_about">
+            <p class="about__par">
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -154,34 +153,45 @@
           265, Амстердам
         </p>
       </address>
-      <ul class="footer__menu">
-        <li class="footer__menu-list-item">
-          <a href="#" class="word-footer"> главная </a>
-        </li>
-        <li class="footer__menu-list-item">
-          <a href="#"> посмотреть лоты </a>
-        </li>
-        <li class="footer__menu-list-item">
-          <a href="#" class="word-footer"> об аукционе </a>
-        </li>
-      </ul>
-      <ul class="footer__menu-link_active">
-        <li class="footer__social-list-item">
-          <a href="#">
-            <img src="images/yt.svg" alt="иконка ютуб" />
-          </a>
-        </li>
-        <li class="footer__social-list-item">
-          <a href="#">
-            <img src="images/vk.svg" alt="иконка вк" />
-          </a>
-        </li>
-        <li class="footer__social-list-item">
-          <a href="#">
-            <img src="images/pinterest.svg" alt="иконка пинтерест" />
-          </a>
-        </li>
-      </ul>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item">
+            <a
+              class="footer__menu-link footer__menu-link_active"
+              href="#"
+              class="word-footer"
+              >главная</a
+            >
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#" class="word-footer">
+              посмотреть&nbsp;лоты
+            </a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#" class="word-footer">
+              об&nbsp;аукционе
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__social-list">
+          <li class="footer__social-list-item">
+            <a class="" href="#">
+              <img src="images/yt.svg" alt="иконка ютуб" />
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a href="#">
+              <img src="images/vk.svg" alt="иконка вк" />
+            </a>
+          </li>
+          <li class="footer__social-list-item">
+            <a href="#">
+              <img src="images/pinterest.svg" alt="иконка пинтерест" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
