@@ -35,8 +35,6 @@ body {
   text-decoration: none;
 }
 
-
-
 .header_point_custom {
   list-style: none;
   text-decoration: none;
@@ -210,11 +208,6 @@ body {
   margin-top: 279px;
   margin-left: 40px;
   font-size: 20px;
-}
-.card {
-  height: 100%;
-  position: relative;
-  z-index: 0;
 }
 .card-image-door {
   background-image: url(../images/card-lot-02.jpg);
