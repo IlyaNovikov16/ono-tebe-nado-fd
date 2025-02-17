@@ -159,6 +159,7 @@ body {
 }
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   gap: 25px;
   justify-content: center;
@@ -177,18 +178,16 @@ body {
   height: 100%;
   position: relative;
   z-index: 0;
-  display: inline-block;
-}
-.card-image-men {
-  background-image: url(../images/card-lot-01.jpg);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: 48px;
+  justify-content: space-between;
   background-size: cover;
   background-position: center;
 }
-.card-foto-men {
-  background-size: 100% 100%;
-  position: relative;
-  height: 100%;
-  z-index: -1;
+.card-image-men {
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card__title {
@@ -196,59 +195,31 @@ body {
   font-size: 22px;
   width: 254px;
   padding-top: 48px;
+  padding-bottom: 30px;
   margin-left: 40px;
   text-transform: uppercase;
   text-decoration: underline;
   z-index: 5;
+  flex-grow: 1;
 }
-.card__text-men {
+.card__text {
+  display: flex;
+  justify-content: space-between;
   z-index: 2;
   color: white;
   width: 254px;
-  margin-top: 279px;
+
   margin-left: 40px;
   font-size: 20px;
 }
 .card-image-door {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
 }
-.card-foto-door {
-  background-size: 100% 100%;
-  flex-shrink: 0;
-  position: relative;
-  height: 100%;
-  z-index: 0;
-}
-.card__text-door {
-  z-index: 2;
-  color: white;
-  width: 254px;
-  margin-top: 35px;
-  margin-left: 40px;
-  font-size: 20px;
-}
+
 .card-image-picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
 }
-.card-photo-picture {
-  background-size: 100% 100%;
-  flex-shrink: 0;
-  position: relative;
-  height: 100%;
-  z-index: 0;
-}
-.card__text-picture {
-  z-index: 2;
-  color: white;
-  width: 254px;
-  margin-top: 131px;
-  margin-left: 40px;
-  font-size: 20px;
-}
+
 .lots__look-more-link {
   display: block;
   margin: 30px 0 0 64px;
@@ -314,10 +285,7 @@ body {
   font-size: 18px;
   margin-bottom: 82px;
 }
-.footer__menu {
-  display: flex;
-  flex-direction: row;
-}
+
 .footer__menu-list {
   list-style-type: none;
   margin-left: 136px;
